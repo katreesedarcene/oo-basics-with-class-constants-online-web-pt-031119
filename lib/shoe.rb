@@ -10,9 +10,7 @@ class Shoe
 
   def brand=(brand)
     @brand = brand 
-    @unique = size 
     BRANDS << brand unless BRANDS.include?(brand)
-    
   end
   def cobble
     self.condition = "new"
